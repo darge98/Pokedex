@@ -1,21 +1,21 @@
+.overlay {
+  height: 100%;
+  width: 100%;
+  z-index: 999;
+}
+
 .pokeball {
   display: block;
-  margin: 120px auto 0 auto;
   width: 80px;
   height: 80px;
   animation-duration: 2s;
   animation-iteration-count: infinite;
-  border-radius: 100%;
-  border: solid #37474f 2px;
   background-image: url("/assets/images/pokeball.png");
   background-size: contain;
 }
 
 .pokeball-loader {
   border-bottom: solid 3px #eaeaea;
-  top: calc(50% - 207px);
-  position: absolute;
-  width: 100%;
 }
 
 .bounce {
