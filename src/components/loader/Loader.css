@@ -1,0 +1,45 @@
+.pokeball {
+  display: block;
+  margin: 120px auto 0 auto;
+  width: 80px;
+  height: 80px;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  border-radius: 100%;
+  border: solid #37474f 2px;
+  background-image: url("/assets/images/pokeball.png");
+  background-size: contain;
+}
+
+.pokeball-loader {
+  border-bottom: solid 3px #eaeaea;
+  top: calc(50% - 207px);
+  position: absolute;
+  width: 100%;
+}
+
+.bounce {
+  animation-name: bounce;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate(0, 0) rotate(0);
+  }
+  20% {
+    transform: translate(-10px, 0) rotate(-20deg);
+  }
+  30% {
+    transform: translate(10px, 0) rotate(20deg);
+  }
+  50% {
+    transform: translate(-10px, 0) rotate(-10deg);
+  }
+  60% {
+    transform: translate(10px, 0) rotate(10deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0);
+  }
+}
