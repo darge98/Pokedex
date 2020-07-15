@@ -1,10 +1,19 @@
 import React from "react";
-import { Sidebar } from "../../components/sidebar/Sidebar";
+import { Route, Switch } from "react-router-dom";
+import PokemonList from "../../pages/public/pokemon-list/PokemonList";
+import Navbar from "./navbar/Navbar";
 
 const MainLayout = () => (
   <div className="main-layout d-flex flex-column h-100 w-100">
-    <Sidebar />
-    asd
+    <Navbar />
+
+    <div className="content">
+      <Switch>
+        <Route path="/">
+          <PokemonList />
+        </Route>
+      </Switch>
+    </div>
   </div>
 );
 

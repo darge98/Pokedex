@@ -1,10 +1,10 @@
 import React from "react";
-import "./Loader.css";
+import "./Loader.scss";
 
 export const Loader = () => (
-  <div className="overlay d-flex flex-column justify-content-center">
-    <div className="pokeball-loader d-flex justify-content-center">
-      <div className="pokeball bounce" />
+  <div className="flex flex-col justify-center h-full w-full">
+    <div className="flex justify-center pokeball-loader">
+      <div className="block w-20 h-20 bg-contain pokeball-rotation pokeball" />
     </div>
   </div>
 );

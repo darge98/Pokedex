@@ -1,0 +1,36 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+/* Animations */
+@keyframes pokeball-rotation {
+  0% {
+    transform: translate(0, 0) rotate(0);
+  }
+  20% {
+    transform: translate(-10px, 0) rotate(-20deg);
+  }
+  30% {
+    transform: translate(10px, 0) rotate(20deg);
+  }
+  50% {
+    transform: translate(-10px, 0) rotate(-10deg);
+  }
+  60% {
+    transform: translate(10px, 0) rotate(10deg);
+  }
+  80% {
+    transform: translate(10px, 0) rotate(20deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0);
+  }
+}

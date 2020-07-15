@@ -1,0 +1,14 @@
+.pokeball-rotation {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: pokeball-rotation;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+}
+
+.pokeball {
+  background-image: url("/assets/images/pokeball.png");
+}
+
+.pokeball-loader {
+  border-bottom: solid 3px #eaeaea;
+}
