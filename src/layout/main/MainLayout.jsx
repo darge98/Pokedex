@@ -4,7 +4,7 @@ import PokemonList from "../../pages/public/pokemon-list/PokemonList";
 import Navbar from "./navbar/Navbar";
 
 const MainLayout = () => (
-  <div className="main-layout d-flex flex-column h-100 w-100">
+  <div className="flex flex-col h-full w-full">
     <Navbar />
 
     <div className="content">
