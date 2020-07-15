@@ -1,7 +1,6 @@
 import React from "react";
-import "./App.css";
 import { Loader } from "./components/loader/Loader";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 
 // Delay manuale
 const MainLayout = React.lazy(() => {
@@ -13,11 +12,12 @@ const MainLayout = React.lazy(() => {
 
 function App() {
   return (
-    <div className="App">
+    <div className="h-full">
       <React.Suspense fallback={<Loader />}>
         <Switch>
           <Route path="/">
-            <MainLayout />
+            {/* <MainLayout /> */}
+            <Loader />
           </Route>
         </Switch>
       </React.Suspense>
